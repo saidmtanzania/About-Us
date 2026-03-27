@@ -23,5 +23,10 @@ module.exports = (app, renderLayout) => {
         `;
         res.send(renderLayout(content));
     });
-    
+
+    app.get("/api/about-us", (req, res) => {
+        res.json({
+            message: "About Us endpoint"
+        });
+    });
 };
