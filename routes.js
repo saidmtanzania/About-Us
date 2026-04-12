@@ -8,7 +8,7 @@ module.exports = (app, renderLayout) => {
             <script>
                 async function load() {
                     try {
-                        const res = await fetch('/api/about-us');
+                        const res = await fetch('http://localhost:3001/api/about-us');
                         const data = await res.json();
 
                         document.getElementById("result").innerHTML =
